@@ -1,0 +1,19 @@
+print('*** Menu iterativo ***')
+
+salir = False
+
+while not salir:
+    print('''' Menu:
+          1. Crear Cuenta
+          2. Eliminar Cuenta
+          3. Salir''')
+    opcion = int(input('Selecciona una opcion: '))
+    if opcion == 1: 
+        print('Creando cuenta...\n')
+    elif opcion == 2: 
+        print('Eliminando cuenta...\n')
+    elif opcion == 3:
+        print('Saliendo, hasta pronto!!\n')
+        salir = True
+    else:
+        print('Opcion invalida!!!\n')
