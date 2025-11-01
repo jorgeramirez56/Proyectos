@@ -5,7 +5,7 @@ salir = False
 saldo = 1000 
 
 while not salir: 
-    print(''' Menu:
+    print(''' Operaciones a realizar en el cajero automatico:
           1. Depositar
           2. Retirar
           3. Consultar Saldo
