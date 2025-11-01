@@ -1,0 +1,32 @@
+print("**** Cajero Automatico ****")
+
+salir = False
+
+saldo = 1000 
+
+while not salir: 
+    print(''' Menu:
+          1. Depositar
+          2. Retirar
+          3. Consultar Saldo
+          4. Salir ''')
+    opcion = int(input('Selecciona una opcion: '))
+
+    if opcion == 1: 
+        deposito = float(input('Ingresa el monto a depositar: '))
+        saldo = saldo + deposito
+        print('Operacion exitosa')
+    elif opcion == 2: 
+        retiro = float(input('Ingresa el monto a retirar: '))
+        if retiro <= saldo:
+            saldo = saldo - retiro
+            print('Operacion exitosa')
+        else: 
+            print('Saldo insuficiente ingrese otra cantidad')
+    elif opcion == 3: 
+        print(f'Su saldo actual es de: ${saldo} pesos')
+    else:
+        print('Saliendo del cajero. Hasta pronto')
+        salir = True
+
+    
