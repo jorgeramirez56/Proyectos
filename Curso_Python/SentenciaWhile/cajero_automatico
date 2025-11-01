@@ -25,8 +25,12 @@ while not salir:
             print('Saldo insuficiente ingrese otra cantidad')
     elif opcion == 3: 
         print(f'Su saldo actual es de: ${saldo} pesos')
-    else:
+    elif opcion == 4: 
         print('Saliendo del cajero. Hasta pronto')
         salir = True
+    else:
+        print('Opcion invalida, ingresa otra opcion\n')
+        
+    
 
     
